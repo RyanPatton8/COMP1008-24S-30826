@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8ddeb65e-aab7-466e-a6bd-b1fee9e107b9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/untitled/src/Assignment/Assignment1.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/Assignment/Assignment1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/Assignment/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/Assignment/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/Assignment/HouseRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/Assignment/HouseRunner.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2hBwWjl1qXXEicJjfLUYtGcr1wr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Assignment1.executor": "Run",
+    "Application.HouseRunner.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "currentWork",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/School/Sem 2/Java 1008/COMP1008-24S-30826/COMP1008-24S-30826/AssignmentOne",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8ddeb65e-aab7-466e-a6bd-b1fee9e107b9" name="Changes" comment="" />
+      <created>1717080814019</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717080814019</updated>
+      <workItem from="1717080814913" duration="949000" />
+      <workItem from="1717081776935" duration="287000" />
+      <workItem from="1717083231733" duration="449000" />
+      <workItem from="1717091382563" duration="358000" />
+      <workItem from="1717095271004" duration="3350000" />
+      <workItem from="1717104467825" duration="1724000" />
+      <workItem from="1717158626133" duration="3157000" />
+      <workItem from="1717161849140" duration="1536000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
