@@ -3,9 +3,6 @@ package Assignment;
 import java.util.Scanner;
 
 public class Assignment1 {
-    public static void main(String[] args) {
-        task4();
-    }
 
     static void task1() {
         //create instance of scanner object
@@ -76,5 +73,9 @@ public class Assignment1 {
         int[] array = new int[amount];
 
         task3(array);
+    }
+
+    public static void main(String[] args) {
+        task4();
     }
 }
