@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8ddeb65e-aab7-466e-a6bd-b1fee9e107b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/untitled/src/Assignment/Assignment1.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/Assignment/Assignment1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/Assignment/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/Assignment/House.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/Assignment/HouseRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/untitled/src/Assignment/HouseRunner.java" afterDir="false" />
-    </list>
+    <list default="true" id="8ddeb65e-aab7-466e-a6bd-b1fee9e107b9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +36,7 @@
     "Application.Assignment1.executor": "Run",
     "Application.HouseRunner.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "currentWork",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/School/Sem 2/Java 1008/COMP1008-24S-30826/COMP1008-24S-30826/AssignmentOne",
     "node.js.detected.package.eslint": "true",
@@ -74,7 +70,7 @@
       <workItem from="1717095271004" duration="3350000" />
       <workItem from="1717104467825" duration="1724000" />
       <workItem from="1717158626133" duration="3157000" />
-      <workItem from="1717161849140" duration="1536000" />
+      <workItem from="1717161849140" duration="2001000" />
     </task>
     <servers />
   </component>
