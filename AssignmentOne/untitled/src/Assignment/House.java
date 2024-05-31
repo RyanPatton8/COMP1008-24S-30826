@@ -18,7 +18,7 @@ public class House {
      * @param squareFootage square footage of home
      */
     public void setSquareFootage(short squareFootage) {
-        if(squareFootage > 3)
+        if(squareFootage >= 5)
             this.squareFootage = squareFootage;
     }
 
