@@ -30,7 +30,7 @@ public class Account {
 		}
 		return false;
 	}
-	private boolean validateAccountName(String accountName) {
+	protected boolean validateAccountName(String accountName) {
 		//if less than 4 characters, has more than one space or single quote,
 		//or has any character besides the listed that isn't a letter deem it invalid
 		if (accountName.length() < 4) {
@@ -62,7 +62,7 @@ public class Account {
 		}
 		return false;
 	}
-	private boolean validateAccountNumber(int accountNumber) {
+	protected boolean validateAccountNumber(int accountNumber) {
 		sb.append(accountNumber);
 		Pattern accountNumberPattern = Pattern.compile("^\\d{5,9}$");
 		Matcher matcher = accountNumberPattern.matcher(sb.toString());
@@ -84,7 +84,7 @@ public class Account {
 		}
 		return false;
 	}
-	private boolean validateAccountBalance(double accountBalance) {
+	protected boolean validateAccountBalance(double accountBalance) {
 		sb.append(accountBalance);
 		Pattern accountBalancePattern = Pattern.compile("^-?\\d+.?\\d{0,2}$");
 		Matcher matcher = accountBalancePattern.matcher(sb.toString());

@@ -105,54 +105,162 @@ public class Bank {
 
 
 	public Account getAccountByNumber(int accountNumber) {
+		for(Account account : accounts) {
+			if (account.getAccountNumber() == accountNumber){
+				return account;
+			}
+		}
 		return new Account();
 	}
 	
 	public boolean addAccount(Account account) {
+		if (validateAccount(account)) {
+			accounts.add(account);
+			return true;
+		}
 		return false;
 	}
+
+	private boolean validateAccount(Account account) {
+		for(Account newAccount : accounts){
+			if (newAccount.getAccountNumber() == account.getAccountNumber()){
+				return false;
+			}
+		}
+		return true;
+	}
+
 	public boolean addAccount(String accountName, int accountNumber, double accountBalance) {
-		return false;
+		for(Account newAccount : accounts){
+			if (newAccount.getAccountNumber() == accountNumber){
+				return false;
+			}
+		}
+		accounts.add(new Account(accountName, accountNumber, accountBalance));
+		return true;
 	}
 	public Account viewAccount(int accountNumber) {
+		for(Account account : accounts) {
+			if (account.getAccountNumber() == accountNumber){
+				return account;
+			}
+		}
 		return new Account();
 	}
 
 	public Account viewAccount(byte index) {
+//		I think this would be cleaner but im going to follow your guide-lines of looping through each index
+//		try{
+//			return accounts.get(index);
+//		}
+//		catch(IndexOutOfBoundsException e){
+//			return new Account();
+//		}
+		for (int i = 0; i < accounts.size(); i++) {
+			if (i == index){
+				return accounts.get(i);
+			}
+		}
 		return new Account();
 	}
 
 	public boolean modifyAccount(int accountNumber, String accountName) {
+		for(Account account : accounts) {
+			if (account.getAccountNumber() == accountNumber && account.validateAccountName(accountName)){
+				account.setAccountName(accountName);
+				return true;
+			}
+			else if (account.getAccountNumber() == accountNumber && !account.validateAccountName(accountName)){
+				break;
+			}
+		}
 		return false;
 	}
 
 	public boolean modifyAccount(int accountNumber, double accountBalance) {
+		for(Account account : accounts) {
+			if (account.getAccountNumber() == accountNumber && account.validateAccountBalance(accountBalance)){
+				account.setAccountBalance(accountBalance);
+				return true;
+			}
+			else if (account.getAccountNumber() == accountNumber && !account.validateAccountBalance(accountBalance)){
+				break;
+			}
+		}
 		return false;
 	}
 
 	public boolean modifyAccount(int accountNumber, String accountName, double accountBalance) {
+		for(Account account : accounts) {
+			if (account.getAccountNumber() == accountNumber && account.validateAccountName(accountName) && account.validateAccountBalance(accountBalance)){
+				account.setAccountName(accountName);
+				account.setAccountBalance(accountBalance);
+				return true;
+			}
+			else if (account.getAccountNumber() == accountNumber){
+				break;
+			}
+		}
 		return false;
 	}
 
 	public boolean modifyAccount(byte index, String accountName) {
+		for (int i = 0; i < accounts.size(); i++) {
+			if (i == index && accounts.get(index).validateAccountName(accountName)){
+				accounts.get(index).setAccountName(accountName);
+				return true;
+			}
+			else if (i == index){
+				break;
+			}
+		}
 		return false;
 	}
 
 	public boolean modifyAccount(byte index, double accountBalance) {
+		for (int i = 0; i < accounts.size(); i++) {
+			if (i == index && accounts.get(index).validateAccountBalance(accountBalance)){
+				accounts.get(index).setAccountBalance(accountBalance);
+				return true;
+			}
+			else if (i == index){
+				break;
+			}
+		}
 		return false;
 	}
 
 	public boolean modifyAccount(byte index, String accountName, double accountBalance) {
+		for (int i = 0; i < accounts.size(); i++) {
+			if (i == index && accounts.get(index).validateAccountName(accountName) && accounts.get(index).validateAccountBalance(accountBalance)){
+				accounts.get(index).setAccountName(accountName);
+				accounts.get(index).setAccountBalance(accountBalance);
+				return true;
+			}
+			else if (i == index){
+				break;
+			}
+		}
 		return false;
 	}
 
 	public boolean deleteAccount(int accountNumber) {
+		for(Account ac : accounts){
+			if (ac.getAccountNumber() == accountNumber){
+				accounts.remove(ac);
+				return true;
+			}
+		}
 		return false;
 	}
 
 	public boolean deleteAccount(byte index) {
+		for (int i = 0; i < accounts.size(); i++) {
+			if (i == index) {
+				accounts.remove(i);
+				return true;
+			}
+		}
 		return false;
 	}
-	
-	
 }
