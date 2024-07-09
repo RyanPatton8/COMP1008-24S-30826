@@ -31,17 +31,14 @@ public class Account {
 		return false;
 	}
 	private boolean validateAccountName(String accountName) {
-		if (accountName.length() < 4){
+		//if less than 4 characters, has more than one space or single quote,
+		//or has any character besides the listed that isn't a letter deem it invalid
+		if (accountName.length() < 4) {
 			return false;
 		}
-		/*id love if you could show us in a lecture how to do this with
-		regex I tried for hours, but I couldn't figure out how to allow
-		the user to place a single quote or space where ever inside the
-		string in what ever order they'd like*/
 		int singleQuoteCount = 0;
 		int spaceCount = 0;
 
-		//so I did this variation on what you showed us with the person class that counts the single quotes and spaces
 		for(char letter : accountName.toUpperCase().toCharArray()) {
 			if (letter >= 'A' && letter <= 'Z' || letter == '-'){continue;}
 			else if (letter == ' '){spaceCount++;}
@@ -89,7 +86,7 @@ public class Account {
 	}
 	private boolean validateAccountBalance(double accountBalance) {
 		sb.append(accountBalance);
-		Pattern accountBalancePattern = Pattern.compile("^-*\\d+.?\\d{0,2}$");
+		Pattern accountBalancePattern = Pattern.compile("^-?\\d+.?\\d{0,2}$");
 		Matcher matcher = accountBalancePattern.matcher(sb.toString());
 		if (matcher.matches()) {
 			sb.setLength(0);
@@ -101,8 +98,18 @@ public class Account {
 
 	@Override
 	public boolean equals(Object obj) {
-		return false;
+		if( obj instanceof Account){
+
+			Account compare = (Account) obj;
+
+			return this.accountName.equals(compare.accountName) && this.accountNumber == compare.accountNumber
+					&& this.accountBalance == compare.accountBalance;
+		}
+		else{
+			return false;
+		}
 	}
+
 	@Override
 	public String toString() {
 		return "Account Name: " + accountName +
