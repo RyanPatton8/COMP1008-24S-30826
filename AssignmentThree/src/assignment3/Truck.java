@@ -52,8 +52,29 @@ public class Truck extends Vehicle {
         this.seats = seats;
         this.trunkSpace = trunkSpace;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Truck compare)) {
+            return false;
+        } else {
+            return this.color.equals(compare.color) &&
+                    this.numberOfDoors == compare.numberOfDoors &&
+                    this.isGasPowered() == compare.isGasPowered() &&
+                    this.seats == compare.seats &&
+                    this.trunkSpace == compare.trunkSpace;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Color: " + color + "\nNumber of Doors: " + numberOfDoors
+                + "\nGas Powered: " + isGasPowered() + "\nNumber of Seats: " + seats
+                + "\nTrunk Space in ft^3: " + trunkSpace;
+    }
+
     @Override
     public boolean isEcoFriendly() {
-        return !gasPowered && numberOfDoors == 2 && trunkSpace == 0;
+        return !isGasPowered() && numberOfDoors == 2 && trunkSpace == 0;
     }
 }

@@ -8,7 +8,6 @@ public class Vehicle {
     protected byte numberOfDoors = 4;
     private boolean gasPowered = true;
 
-
     public boolean isGasPowered() {
         return gasPowered;
     }
@@ -46,8 +45,6 @@ public class Vehicle {
         this.gasPowered = gasPowered;
     }
 
-//    4) Override (not Overload) the equals() method so it evaluates two Vehicle objects and returns true
-//            if and only if (iff) the two Vehicle objects are equal is value (2 marks)
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Vehicle compare)) {
@@ -57,5 +54,8 @@ public class Vehicle {
         }
     }
 
-//    5) Override the toString method to summarize all instance variables of the class (1 mark)
+    @Override
+    public String toString() {
+        return "Color: " + color + "\nNumber of Doors: " + numberOfDoors + "\nGas Powered: " + gasPowered;
+    }
 }
